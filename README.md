@@ -45,8 +45,7 @@ A modern iOS movie discovery app built with SwiftUI that helps you find your nex
 <img width="200" height="450" alt="FiltersPage" src="https://github.com/user-attachments/assets/a7927b20-2772-4981-a020-0118aae76b4c" />
 <img width="200" height="450" alt="MovieCardPage-1" src="https://github.com/user-attachments/assets/12305020-7d6e-4172-af79-1fc24f559e21" />
 <img width="200" height="450" alt="MovieCardPage-2" src="https://github.com/user-attachments/assets/d8f4aada-d0d6-44ac-a336-c8a3a6e20f1e" />
-<img width="200" height="450" alt="MovieCardPage-2" src="https://github.com/user-attachments/assets/bbdeb131-2385-455d-88e0-323751058776" />
-<img width="200" height="450"alt="FavoritesPage-3" src="https://github.com/user-attachments/assets/cc5b6f9d-898c-490d-b566-105019d6c28f" />
+<img width="200" height="450" alt="FavoritesPage-3" src="https://github.com/user-attachments/assets/cc5b6f9d-898c-490d-b566-105019d6c28f" />
 </p>
 
 
