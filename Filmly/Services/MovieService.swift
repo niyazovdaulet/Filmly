@@ -2,7 +2,7 @@ import Foundation
 import Combine
 
 class MovieService: ObservableObject {
-    private let apiKey = ""
+    private let apiKey = "404125da4b382c37bfb650bd5ceab531"
     private let baseURL = "https://api.themoviedb.org/3"
     
     @Published var movies: [Movie] = []
