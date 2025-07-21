@@ -36,7 +36,6 @@ A modern iOS movie discovery app built with SwiftUI that helps you find your nex
 - **Storage**: UserDefaults for local data persistence
 - **Network Monitoring**: Network framework
 
-<<<<<<< HEAD
 ### Screenshots
 
 *Welcome to Filmly*
@@ -50,7 +49,7 @@ A modern iOS movie discovery app built with SwiftUI that helps you find your nex
 </p>
 
 =======
->>>>>>> main
+
 ## 📋 Requirements
 
 - Xcode 16.4+
