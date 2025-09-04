@@ -3,7 +3,7 @@ import SwiftUI
 struct MovieDetailView: View {
     let movie: Movie
     @ObservedObject var favoritesManager: FavoritesManager
-    @StateObject private var detailService = MovieDetailService()
+    @ObservedObject var detailService: MovieDetailService
     @Environment(\.dismiss) private var dismiss
     
     @State private var selectedMovie: Movie?
@@ -11,6 +11,7 @@ struct MovieDetailView: View {
     init(movie: Movie, favoritesManager: FavoritesManager, detailService: MovieDetailService) {
         self.movie = movie
         self.favoritesManager = favoritesManager
+        self.detailService = detailService
 //        print("MovieDetailView: init for movie \(movie.id)")
     }
     

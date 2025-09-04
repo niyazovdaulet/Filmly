@@ -2,6 +2,7 @@ import SwiftUI
 
 struct FavoritesView: View {
     @ObservedObject var favoritesManager: FavoritesManager
+    @StateObject private var detailService = MovieDetailService()
     @State private var selectedMovie: Movie?
     @State private var showingMovieDetail = false
     @State private var showingClearAllAlert = false
@@ -31,7 +32,7 @@ struct FavoritesView: View {
             .sheet(isPresented: $showingMovieDetail) {
                 if let movie = selectedMovie {
                     NavigationView {
-                        MovieDetailView(movie: movie, favoritesManager: favoritesManager, detailService: MovieDetailService())
+                        MovieDetailView(movie: movie, favoritesManager: favoritesManager, detailService: detailService)
                     }
                 }
             }
@@ -42,6 +43,11 @@ struct FavoritesView: View {
                 }
             } message: {
                 Text("Are you sure you want to remove all movies from your favorites? This action cannot be undone.")
+            }
+            .onChange(of: selectedMovie) { newMovie in
+                if let movie = newMovie {
+                    detailService.loadData(for: movie.id)
+                }
             }
         }
     }

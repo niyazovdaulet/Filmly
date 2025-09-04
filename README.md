@@ -42,14 +42,12 @@ A modern iOS movie discovery app built with SwiftUI that helps you find your nex
 *Welcome to Filmly*
 
 <p align="center">
-<img width="200" height="450" alt="homePage" src="https://github.com/user-attachments/assets/b9071a1d-ea3b-4ad0-bd31-07f38e7e7093" />
-<img width="200" height="450" alt="FiltersPage" src="https://github.com/user-attachments/assets/a7927b20-2772-4981-a020-0118aae76b4c" />
-<img width="200" height="450" alt="MovieCardPage-1" src="https://github.com/user-attachments/assets/12305020-7d6e-4172-af79-1fc24f559e21" />
-<img width="200" height="450" alt="MovieCardPage-2" src="https://github.com/user-attachments/assets/d8f4aada-d0d6-44ac-a336-c8a3a6e20f1e" />
-<img width="200" height="450" alt="FavoritesPage-3" src="https://github.com/user-attachments/assets/cc5b6f9d-898c-490d-b566-105019d6c28f" />
+<img width="200" height="450" alt="homePage" src="https://github.com/user-attachments/assets/995101d2-50b0-408f-9856-4790dd8e26ae" />
+<img width="200" height="450" alt="FiltersPage" src="https://github.com/user-attachments/assets/7961e4fa-7916-470d-b5cb-071a1bf481f3" />
+<img width="200" height="450" alt="MovieCardPage-1" src="https://github.com/user-attachments/assets/b8f5c8ce-1771-4c89-9fb7-7af61f4f545f" />
+<img width="200" height="450" alt="MovieCardPage-2" src="https://github.com/user-attachments/assets/644c06d8-384e-47eb-83a8-4903a1954d6b" />
+<img width="200" height="450" alt="FavoritesPage-3" src="https://github.com/user-attachments/assets/4219bf6d-53f7-4623-bdc8-a2a7a704cade" />
 </p>
-
-
 
 
 =======

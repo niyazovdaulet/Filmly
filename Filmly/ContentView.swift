@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @StateObject private var movieService = MovieService()
     @StateObject private var favoritesManager = FavoritesManager()
+    @StateObject private var detailService = MovieDetailService()
     @EnvironmentObject var networkMonitor: NetworkMonitor
     @State private var searchText = ""
     @State private var filters = MovieFilters()
@@ -54,7 +55,7 @@ struct ContentView: View {
             .sheet(isPresented: $showingMovieDetail) {
                 if let movie = selectedMovie {
                     NavigationView {
-                        MovieDetailView(movie: movie, favoritesManager: favoritesManager, detailService: MovieDetailService())
+                        MovieDetailView(movie: movie, favoritesManager: favoritesManager, detailService: detailService)
                     }
                 }
             }
@@ -64,6 +65,11 @@ struct ContentView: View {
             .onAppear {
                 if movieService.movies.isEmpty {
                     movieService.fetchMovies(filters: filters)
+                }
+            }
+            .onChange(of: selectedMovie) { newMovie in
+                if let movie = newMovie {
+                    detailService.loadData(for: movie.id)
                 }
             }
         }
